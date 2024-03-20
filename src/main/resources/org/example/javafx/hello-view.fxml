@@ -1,21 +1,212 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" type="AnchorPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafx.HelloController">
+<fx:root maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" type="AnchorPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafx.HelloController">
    <children>
-      <Label fx:id="welcomeText" layoutX="104.0" layoutY="1.0" prefHeight="26.0" prefWidth="993.0" text="سلام به برنامه ی چینش برنامه هفتگی خوش آمدید،با ما همراه باشید تا برای دبیرستان شما فقط در چند دقیقه یک برنامه ی هفتگی مطلوب بچینیم" textFill="RED">
+      <Label fx:id="welcomeText" layoutX="158.0" layoutY="1.0" prefHeight="26.0" prefWidth="993.0" text="سلام به برنامه ی چینش برنامه هفتگی خوش آمدید،با ما همراه باشید تا برای دبیرستان شما فقط در چند دقیقه یک برنامه ی هفتگی مطلوب بچینیم" textFill="RED">
          <font>
             <Font name="System Bold Italic" size="17.0" />
          </font>
       </Label>
-      <TabPane fx:id="tab_teachers" layoutX="-12.0" layoutY="86.0" prefHeight="667.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE">
+      <TabPane fx:id="tab_etelaat" layoutY="106.0" prefHeight="695.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
-          <Tab fx:id="tab_teachers" style="-fx-background-color: #d7d41e;" text="اطلاعات معلمان" />
+            <Tab style="-fx-background-color: #d9c816;" text="اطلاعات معلمان">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="lb_rahnama_teachers" layoutX="21.0" layoutY="1.0" text="لطفا اطلاعات یک معلم را وارد کرده و سپس بر روی دکمه بعدی بزنید و اطلاعات معلم بعدی را وارد کنید و پس از پایان یافتن معلمان بر روی دکمه تمام کلیک کنید">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="1164.0" layoutY="58.0" prefHeight="28.0" prefWidth="33.0" text="نام:">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="1008.0" layoutY="60.0" promptText="نام دبیر را وارد کنید" />
+                        <Label layoutX="1157.0" layoutY="113.0" text="درس:">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="1008.0" layoutY="114.0" promptText="درسی که دبیر تدریس میکند" />
+                        <Label layoutX="822.0" layoutY="158.0" text="روز ها وساعت های حضور دبیر در دبیرستان را انتخاب کنید:">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <JFXRadioButton layoutX="1133.0" layoutY="204.0" selected="true" text="شنبه">
+                           <unSelectedColor>
+                              <Color red="1.0" />
+                           </unSelectedColor>
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <selectedColor>
+                              <Color red="0.05098039284348488" green="0.8274509906768799" blue="0.16862745583057404" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <ButtonBar layoutX="84.0" layoutY="163.0" prefHeight="40.0" prefWidth="200.0" />
+                        <JFXRadioButton layoutX="883.0" layoutY="204.0" selected="true" text="یک شنبه">
+                           <unSelectedColor>
+                              <Color red="1.0" />
+                           </unSelectedColor>
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <selectedColor>
+                              <Color red="0.05098039284348488" green="0.8274509906768799" blue="0.16862745583057404" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="625.0" layoutY="204.0" selected="true" text="دو شنبه">
+                           <unSelectedColor>
+                              <Color red="1.0" />
+                           </unSelectedColor>
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <selectedColor>
+                              <Color red="0.05098039284348488" green="0.8274509906768799" blue="0.16862745583057404" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="360.0" layoutY="204.0" selected="true" text="سه شنبه">
+                           <unSelectedColor>
+                              <Color red="0.9200000166893005" />
+                           </unSelectedColor>
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <selectedColor>
+                              <Color red="0.05098039284348488" green="0.8274509906768799" blue="0.16862745583057404" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="88.0" layoutY="204.0" selected="true" text="چهار شنبه">
+                           <unSelectedColor>
+                              <Color red="1.0" />
+                           </unSelectedColor>
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <selectedColor>
+                              <Color red="0.05098039284348488" green="0.8274509906768799" blue="0.16862745583057404" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="1066.0" layoutY="236.0" selected="true" text="زنگ اول">
+                           <selectedColor>
+                              <Color green="0.1921568661928177" blue="1.0" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="1066.0" layoutY="262.0" selected="true" text="زنگ دوم">
+                           <selectedColor>
+                              <Color green="0.1921568661928177" blue="1.0" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="1066.0" layoutY="288.0" selected="true" text="زنگ سوم">
+                           <selectedColor>
+                              <Color green="0.1921568661928177" blue="1.0" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="1066.0" layoutY="314.0" selected="true" text="زنگ چهارم">
+                           <selectedColor>
+                              <Color green="0.1921568661928177" blue="1.0" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="816.0" layoutY="236.0" selected="true" text="زنگ اول">
+                           <selectedColor>
+                              <Color green="0.1921568661928177" blue="1.0" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="816.0" layoutY="262.0" selected="true" text="زنگ دوم">
+                           <selectedColor>
+                              <Color green="0.1921568661928177" blue="1.0" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="816.0" layoutY="288.0" selected="true" text="زنگ سوم">
+                           <selectedColor>
+                              <Color green="0.1921568661928177" blue="1.0" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="816.0" layoutY="314.0" selected="true" text="زنگ چهارم">
+                           <selectedColor>
+                              <Color green="0.1921568661928177" blue="1.0" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="558.0" layoutY="236.0" selected="true" text="زنگ اول">
+                           <selectedColor>
+                              <Color green="0.1921568661928177" blue="1.0" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="558.0" layoutY="262.0" selected="true" text="زنگ دوم">
+                           <selectedColor>
+                              <Color green="0.1921568661928177" blue="1.0" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="558.0" layoutY="288.0" selected="true" text="زنگ سوم">
+                           <selectedColor>
+                              <Color green="0.1921568661928177" blue="1.0" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="558.0" layoutY="314.0" selected="true" text="زنگ چهارم">
+                           <selectedColor>
+                              <Color green="0.1921568661928177" blue="1.0" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="293.0" layoutY="236.0" selected="true" text="زنگ اول">
+                           <selectedColor>
+                              <Color green="0.1921568661928177" blue="1.0" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="293.0" layoutY="262.0" selected="true" text="زنگ دوم">
+                           <selectedColor>
+                              <Color green="0.1921568661928177" blue="1.0" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="293.0" layoutY="288.0" selected="true" text="زنگ سوم">
+                           <selectedColor>
+                              <Color green="0.1921568661928177" blue="1.0" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="293.0" layoutY="314.0" selected="true" text="زنگ چهارم">
+                           <selectedColor>
+                              <Color green="0.1921568661928177" blue="1.0" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="21.0" layoutY="236.0" selected="true" text="زنگ اول">
+                           <selectedColor>
+                              <Color green="0.1921568661928177" blue="1.0" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="21.0" layoutY="262.0" selected="true" text="زنگ دوم">
+                           <selectedColor>
+                              <Color green="0.1921568661928177" blue="1.0" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="21.0" layoutY="288.0" selected="true" text="زنگ سوم">
+                           <selectedColor>
+                              <Color green="0.1921568661928177" blue="1.0" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="21.0" layoutY="314.0" selected="true" text="زنگ چهارم">
+                           <selectedColor>
+                              <Color green="0.1921568661928177" blue="1.0" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
           <Tab fx:id="tab_class" style="-fx-background-color: #008636;" text="اطلاعات کلاس ها">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
@@ -23,10 +214,15 @@
           </Tab>
         </tabs>
       </TabPane>
-      <Label fx:id="lb_rahnama" layoutX="227.0" layoutY="41.0" text="لطفا تب های زیر را یکی یکی انتخاب کرده و اطلاعت دبیرستان خود را وارد کنید" textFill="#1200ff">
+      <Label fx:id="lb_rahnama" layoutX="282.0" layoutY="44.0" text="لطفا تب های زیر را یکی یکی انتخاب کرده و اطلاعت دبیرستان خود را وارد کنید">
          <font>
             <Font size="23.0" />
          </font>
       </Label>
+      <ImageView fitHeight="106.0" fitWidth="109.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@filelogo.jpg" />
+         </image>
+      </ImageView>
    </children>
 </fx:root>
