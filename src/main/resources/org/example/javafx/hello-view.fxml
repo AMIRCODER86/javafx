@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" type="AnchorPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafx.HelloController">
+   <children>
+      <Label fx:id="welcomeText" layoutX="104.0" layoutY="1.0" prefHeight="26.0" prefWidth="993.0" text="سلام به برنامه ی چینش برنامه هفتگی خوش آمدید،با ما همراه باشید تا برای دبیرستان شما فقط در چند دقیقه یک برنامه ی هفتگی مطلوب بچینیم" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <TabPane fx:id="tab_teachers" layoutX="-12.0" layoutY="86.0" prefHeight="667.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tab_teachers" style="-fx-background-color: #d7d41e;" text="اطلاعات معلمان" />
+          <Tab fx:id="tab_class" style="-fx-background-color: #008636;" text="اطلاعات کلاس ها">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Label fx:id="lb_rahnama" layoutX="227.0" layoutY="41.0" text="لطفا تب های زیر را یکی یکی انتخاب کرده و اطلاعت دبیرستان خود را وارد کنید" textFill="#1200ff">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</fx:root>
