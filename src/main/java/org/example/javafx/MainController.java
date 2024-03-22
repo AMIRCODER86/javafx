@@ -14,6 +14,9 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainController {
 
     @FXML
@@ -351,6 +354,33 @@ public class MainController {
             chb_four_bell_wednesday.setSelected(false);
             chb_four_bell_wednesday.setDisable(true);
         }
+    }
+    public Boolean[][] getListCheckBox(Boolean[][] list){
+       list[0][0] = chb_one_bell_saturday.isSelected();
+       list[0][1] = chb_tow_bell_saturday.isSelected();
+       list[0][2] = chb_three_bell_saturday.isSelected();
+       list[0][3] = chb_four_bell_saturday.isSelected();
+
+       list[1][0] = chb_one_bell_sunday.isSelected();
+       list[1][1] = chb_tow_bell_sunday.isSelected();
+       list[1][2] = chb_three_bell_sunday.isSelected();
+       list[1][3] = chb_four_bell_sunday.isSelected();
+
+       list[2][0] = chb_one_bell_monday.isSelected();
+       list[2][1] = chb_tow_bell_monday.isSelected();
+       list[2][2] = chb_three_bell_monday.isSelected();
+       list[2][3] = chb_four_bell_monday.isSelected();
+
+       list[3][0] = chb_one_bell_tuesday.isSelected();
+       list[3][1] = chb_tow_bell_tuesday.isSelected();
+       list[3][2] = chb_three_bell_tuesday.isSelected();
+       list[3][3] = chb_four_bell_tuesday.isSelected();
+
+       list[4][0] = chb_one_bell_wednesday.isSelected();
+       list[4][1] = chb_tow_bell_wednesday.isSelected();
+       list[4][2] = chb_three_bell_wednesday.isSelected();
+       list[4][3] = chb_four_bell_wednesday.isSelected();
+        return list;
     }
 
 }
