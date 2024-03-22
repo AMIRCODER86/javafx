@@ -200,27 +200,157 @@ public class MainController {
 
     @FXML
     void select_chb_monday(ActionEvent event) {
+        if (chb_monday.isSelected()){
+            chb_one_bell_monday.setSelected(true);
+            chb_one_bell_monday.setDisable(false);
 
+            chb_tow_bell_monday.setSelected(true);
+            chb_tow_bell_monday.setDisable(false);
+
+            chb_three_bell_monday.setSelected(true);
+            chb_three_bell_monday.setDisable(false);
+
+            chb_four_bell_monday.setSelected(true);
+            chb_four_bell_monday.setDisable(false);
+
+        }
+        else {
+            chb_one_bell_monday.setSelected(false);
+            chb_one_bell_monday.setDisable(true);
+
+            chb_tow_bell_monday.setSelected(false);
+            chb_tow_bell_monday.setDisable(true);
+
+            chb_three_bell_monday.setSelected(false);
+            chb_three_bell_monday.setDisable(true);
+
+            chb_four_bell_monday.setSelected(false);
+            chb_four_bell_monday.setDisable(true);
+        }
     }
 
     @FXML
     void select_chb_saturday(ActionEvent event) {
+        if (chb_saturday.isSelected()){
+            chb_one_bell_saturday.setSelected(true);
+            chb_one_bell_saturday.setDisable(false);
 
+            chb_tow_bell_saturday.setSelected(true);
+            chb_tow_bell_saturday.setDisable(false);
+
+            chb_three_bell_saturday.setSelected(true);
+            chb_three_bell_saturday.setDisable(false);
+
+            chb_four_bell_saturday.setSelected(true);
+            chb_four_bell_saturday.setDisable(false);
+
+        }
+        else {
+            chb_one_bell_saturday.setSelected(false);
+            chb_one_bell_saturday.setDisable(true);
+
+            chb_tow_bell_saturday.setSelected(false);
+            chb_tow_bell_saturday.setDisable(true);
+
+            chb_three_bell_saturday.setSelected(false);
+            chb_three_bell_saturday.setDisable(true);
+
+            chb_four_bell_saturday.setSelected(false);
+            chb_four_bell_saturday.setDisable(true);
+        }
     }
 
     @FXML
     void select_chb_sunday(ActionEvent event) {
+        if (chb_sunday.isSelected()){
+            chb_one_bell_sunday.setSelected(true);
+            chb_one_bell_sunday.setDisable(false);
 
+            chb_tow_bell_sunday.setSelected(true);
+            chb_tow_bell_sunday.setDisable(false);
+
+            chb_three_bell_sunday.setSelected(true);
+            chb_three_bell_sunday.setDisable(false);
+
+            chb_four_bell_sunday.setSelected(true);
+            chb_four_bell_sunday.setDisable(false);
+
+        }
+        else {
+            chb_one_bell_sunday.setSelected(false);
+            chb_one_bell_sunday.setDisable(true);
+
+            chb_tow_bell_sunday.setSelected(false);
+            chb_tow_bell_sunday.setDisable(true);
+
+            chb_three_bell_sunday.setSelected(false);
+            chb_three_bell_sunday.setDisable(true);
+
+            chb_four_bell_sunday.setSelected(false);
+            chb_four_bell_sunday.setDisable(true);
+        }
     }
 
     @FXML
     void select_chb_tuesday(ActionEvent event) {
+        if (chb_tuesday.isSelected()){
+            chb_one_bell_tuesday.setSelected(true);
+            chb_one_bell_tuesday.setDisable(false);
 
+            chb_tow_bell_tuesday.setSelected(true);
+            chb_tow_bell_tuesday.setDisable(false);
+
+            chb_three_bell_tuesday.setSelected(true);
+            chb_three_bell_tuesday.setDisable(false);
+
+            chb_four_bell_tuesday.setSelected(true);
+            chb_four_bell_tuesday.setDisable(false);
+
+        }
+        else {
+            chb_one_bell_tuesday.setSelected(false);
+            chb_one_bell_tuesday.setDisable(true);
+
+            chb_tow_bell_tuesday.setSelected(false);
+            chb_tow_bell_tuesday.setDisable(true);
+
+            chb_three_bell_tuesday.setSelected(false);
+            chb_three_bell_tuesday.setDisable(true);
+
+            chb_four_bell_tuesday.setSelected(false);
+            chb_four_bell_tuesday.setDisable(true);
+        }
     }
 
     @FXML
     void select_chb_wednesday(ActionEvent event) {
+        if (chb_wednesday.isSelected()){
+            chb_one_bell_wednesday.setSelected(true);
+            chb_one_bell_wednesday.setDisable(false);
 
+            chb_tow_bell_wednesday.setSelected(true);
+            chb_tow_bell_wednesday.setDisable(false);
+
+            chb_three_bell_wednesday.setSelected(true);
+            chb_three_bell_wednesday.setDisable(false);
+
+            chb_four_bell_wednesday.setSelected(true);
+            chb_four_bell_wednesday.setDisable(false);
+
+        }
+        else {
+            chb_one_bell_wednesday.setSelected(false);
+            chb_one_bell_wednesday.setDisable(true);
+
+            chb_tow_bell_wednesday.setSelected(false);
+            chb_tow_bell_wednesday.setDisable(true);
+
+            chb_three_bell_wednesday.setSelected(false);
+            chb_three_bell_wednesday.setDisable(true);
+
+            chb_four_bell_wednesday.setSelected(false);
+            chb_four_bell_wednesday.setDisable(true);
+        }
     }
 
 }
