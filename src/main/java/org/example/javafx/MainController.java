@@ -1,7 +1,7 @@
 package org.example.javafx;
 
+import com.jfoenix.controls.JFXCheckBox;
 import com.jfoenix.controls.JFXListView;
-import com.jfoenix.controls.JFXRadioButton;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -41,6 +41,81 @@ public class MainController {
     private ComboBox<?> cbox_selection_lesson;
 
     @FXML
+    private JFXCheckBox chb_four_bell_monday;
+
+    @FXML
+    private JFXCheckBox chb_four_bell_saturday;
+
+    @FXML
+    private JFXCheckBox chb_four_bell_sunday;
+
+    @FXML
+    private JFXCheckBox chb_four_bell_tuesday;
+
+    @FXML
+    private JFXCheckBox chb_four_bell_wednesday;
+
+    @FXML
+    private JFXCheckBox chb_monday;
+
+    @FXML
+    private JFXCheckBox chb_one_bell_monday;
+
+    @FXML
+    private JFXCheckBox chb_one_bell_saturday;
+
+    @FXML
+    private JFXCheckBox chb_one_bell_sunday;
+
+    @FXML
+    private JFXCheckBox chb_one_bell_tuesday;
+
+    @FXML
+    private JFXCheckBox chb_one_bell_wednesday;
+
+    @FXML
+    private JFXCheckBox chb_saturday;
+
+    @FXML
+    private JFXCheckBox chb_sunday;
+
+    @FXML
+    private JFXCheckBox chb_three_bell_monday;
+
+    @FXML
+    private JFXCheckBox chb_three_bell_saturday;
+
+    @FXML
+    private JFXCheckBox chb_three_bell_sunday;
+
+    @FXML
+    private JFXCheckBox chb_three_bell_tuesday;
+
+    @FXML
+    private JFXCheckBox chb_three_bell_wednesday;
+
+    @FXML
+    private JFXCheckBox chb_tow_bell_monday;
+
+    @FXML
+    private JFXCheckBox chb_tow_bell_saturday;
+
+    @FXML
+    private JFXCheckBox chb_tow_bell_sunday;
+
+    @FXML
+    private JFXCheckBox chb_tow_bell_tuesday;
+
+    @FXML
+    private JFXCheckBox chb_tow_bell_wednesday;
+
+    @FXML
+    private JFXCheckBox chb_tuesday;
+
+    @FXML
+    private JFXCheckBox chb_wednesday;
+
+    @FXML
     private ImageView img_books;
 
     @FXML
@@ -48,6 +123,9 @@ public class MainController {
 
     @FXML
     private Label lb_guide_hour;
+
+    @FXML
+    private Label lb_guide_lesson;
 
     @FXML
     private Label lb_guide_niaz_lesson;
@@ -80,78 +158,6 @@ public class MainController {
     private JFXListView<?> list_teachers;
 
     @FXML
-    private JFXRadioButton rb_Monday;
-
-    @FXML
-    private JFXRadioButton rb_Tuesday;
-
-    @FXML
-    private JFXRadioButton rb_Wednesday;
-
-    @FXML
-    private JFXRadioButton rb_four_bell_monday;
-
-    @FXML
-    private JFXRadioButton rb_four_bell_saturday;
-
-    @FXML
-    private JFXRadioButton rb_four_bell_sunday;
-
-    @FXML
-    private JFXRadioButton rb_four_bell_tuesday;
-
-    @FXML
-    private JFXRadioButton rb_four_bell_wednesday;
-
-    @FXML
-    private JFXRadioButton rb_one_bell_monday;
-
-    @FXML
-    private JFXRadioButton rb_one_bell_saturday;
-
-    @FXML
-    private JFXRadioButton rb_one_bell_sunday;
-
-    @FXML
-    private JFXRadioButton rb_one_bell_tuesday;
-
-    @FXML
-    private JFXRadioButton rb_one_bell_wednesday;
-
-    @FXML
-    private JFXRadioButton rb_saturday;
-
-    @FXML
-    private JFXRadioButton rb_sunday;
-
-    @FXML
-    private JFXRadioButton rb_three_bell_monday;
-
-    @FXML
-    private JFXRadioButton rb_three_bell_sunday;
-
-    @FXML
-    private JFXRadioButton rb_three_bell_tuesday;
-
-    @FXML
-    private JFXRadioButton rb_three_bell_wednesday;
-
-    @FXML
-    private JFXRadioButton rb_tow_bell_monday;
-
-    @FXML
-    private JFXRadioButton rb_tow_bell_saturday;
-
-    @FXML
-    private JFXRadioButton rb_tow_bell_sunday;
-
-    @FXML
-    private JFXRadioButton rb_tow_bell_tuesday;
-
-    @FXML
-    private JFXRadioButton rb_tow_bell_wednesday;
-
-    @FXML
     private Spinner<?> spn_selection_hour_niaz;
 
     @FXML
@@ -164,13 +170,16 @@ public class MainController {
     private Tab tab_teachers;
 
     @FXML
+    private TextField txf_name_class;
+
+    @FXML
     private TextField txf_name_lesson;
 
     @FXML
     private TextField txf_name_teacher;
 
     @FXML
-    void pressFinisTeachers(ActionEvent event) {
+    void pressFinisTeacher(ActionEvent event) {
 
     }
 
@@ -186,6 +195,31 @@ public class MainController {
 
     @FXML
     void pressOkLesson(ActionEvent event) {
+
+    }
+
+    @FXML
+    void select_chb_monday(ActionEvent event) {
+
+    }
+
+    @FXML
+    void select_chb_saturday(ActionEvent event) {
+
+    }
+
+    @FXML
+    void select_chb_sunday(ActionEvent event) {
+
+    }
+
+    @FXML
+    void select_chb_tuesday(ActionEvent event) {
+
+    }
+
+    @FXML
+    void select_chb_wednesday(ActionEvent event) {
 
     }
 

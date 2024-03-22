@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXCheckBox?>
 <?import com.jfoenix.controls.JFXListView?>
-<?import com.jfoenix.controls.JFXRadioButton?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Spinner?>
@@ -13,7 +12,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.paint.Color?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <fx:root fx:id="apane_main" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" type="AnchorPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafx.MainController">
@@ -51,225 +50,74 @@
                               <Font name="System Bold" size="16.0" />
                            </font>
                         </Label>
-                        <JFXRadioButton fx:id="rb_saturday" layoutX="1133.0" layoutY="204.0" selected="true" text="شنبه">
-                           <unSelectedColor>
-                              <Color red="1.0" />
-                           </unSelectedColor>
-                           <font>
-                              <Font name="System Bold" size="16.0" />
-                           </font>
-                           <selectedColor>
-                              <Color red="0.05098039284348488" green="0.8274509906768799" blue="0.16862745583057404" />
-                           </selectedColor>
-                        </JFXRadioButton>
-                        <ButtonBar layoutX="84.0" layoutY="163.0" prefHeight="40.0" prefWidth="200.0" />
-                        <JFXRadioButton fx:id="rb_sunday" layoutX="883.0" layoutY="204.0" selected="true" text="یکشنبه">
-                           <unSelectedColor>
-                              <Color red="1.0" />
-                           </unSelectedColor>
-                           <font>
-                              <Font name="System Bold" size="16.0" />
-                           </font>
-                           <selectedColor>
-                              <Color red="0.05098039284348488" green="0.8274509906768799" blue="0.16862745583057404" />
-                           </selectedColor>
-                        </JFXRadioButton>
-                        <JFXRadioButton fx:id="rb_Monday" layoutX="625.0" layoutY="204.0" selected="true" text="دو شنبه">
-                           <unSelectedColor>
-                              <Color red="1.0" />
-                           </unSelectedColor>
-                           <font>
-                              <Font name="System Bold" size="16.0" />
-                           </font>
-                           <selectedColor>
-                              <Color red="0.05098039284348488" green="0.8274509906768799" blue="0.16862745583057404" />
-                           </selectedColor>
-                        </JFXRadioButton>
-                        <JFXRadioButton fx:id="rb_Tuesday" layoutX="360.0" layoutY="204.0" selected="true" text="سه شنبه">
-                           <unSelectedColor>
-                              <Color red="0.9200000166893005" />
-                           </unSelectedColor>
-                           <font>
-                              <Font name="System Bold" size="16.0" />
-                           </font>
-                           <selectedColor>
-                              <Color red="0.05098039284348488" green="0.8274509906768799" blue="0.16862745583057404" />
-                           </selectedColor>
-                        </JFXRadioButton>
-                        <JFXRadioButton fx:id="rb_Wednesday" layoutX="88.0" layoutY="204.0" selected="true" text="چهار شنبه">
-                           <unSelectedColor>
-                              <Color red="1.0" />
-                           </unSelectedColor>
-                           <font>
-                              <Font name="System Bold" size="16.0" />
-                           </font>
-                           <selectedColor>
-                              <Color red="0.05098039284348488" green="0.8274509906768799" blue="0.16862745583057404" />
-                           </selectedColor>
-                        </JFXRadioButton>
-                        <JFXRadioButton fx:id="rb_one_bell_saturday" layoutX="1066.0" layoutY="236.0" selected="true" text="زنگ اول">
-                           <selectedColor>
-                              <Color green="0.1921568661928177" blue="1.0" />
-                           </selectedColor>
-                           <unSelectedColor>
-                              <Color red="1.0" />
-                           </unSelectedColor>
-                        </JFXRadioButton>
-                        <JFXRadioButton fx:id="rb_tow_bell_saturday" layoutX="1066.0" layoutY="262.0" selected="true" text="زنگ دوم">
-                           <selectedColor>
-                              <Color green="0.1921568661928177" blue="1.0" />
-                           </selectedColor>
-                           <unSelectedColor>
-                              <Color red="1.0" />
-                           </unSelectedColor>
-                        </JFXRadioButton>
-                        <JFXRadioButton fx:id="rb_tow_bell_saturday" layoutX="1066.0" layoutY="288.0" selected="true" text="زنگ سوم">
-                           <selectedColor>
-                              <Color green="0.1921568661928177" blue="1.0" />
-                           </selectedColor>
-                           <unSelectedColor>
-                              <Color red="1.0" />
-                           </unSelectedColor>
-                        </JFXRadioButton>
-                        <JFXRadioButton fx:id="rb_four_bell_saturday" layoutX="1066.0" layoutY="314.0" selected="true" text="زنگ چهارم">
-                           <selectedColor>
-                              <Color green="0.1921568661928177" blue="1.0" />
-                           </selectedColor>
-                           <unSelectedColor>
-                              <Color red="1.0" />
-                           </unSelectedColor>
-                        </JFXRadioButton>
-                        <JFXRadioButton fx:id="rb_one_bell_sunday" layoutX="816.0" layoutY="236.0" selected="true" text="زنگ اول">
-                           <selectedColor>
-                              <Color green="0.1921568661928177" blue="1.0" />
-                           </selectedColor>
-                           <unSelectedColor>
-                              <Color red="1.0" />
-                           </unSelectedColor>
-                        </JFXRadioButton>
-                        <JFXRadioButton fx:id="rb_tow_bell_sunday" layoutX="816.0" layoutY="262.0" selected="true" text="زنگ دوم">
-                           <selectedColor>
-                              <Color green="0.1921568661928177" blue="1.0" />
-                           </selectedColor>
-                           <unSelectedColor>
-                              <Color red="1.0" />
-                           </unSelectedColor>
-                        </JFXRadioButton>
-                        <JFXRadioButton fx:id="rb_three_bell_sunday" layoutX="816.0" layoutY="288.0" selected="true" text="زنگ سوم">
-                           <selectedColor>
-                              <Color green="0.1921568661928177" blue="1.0" />
-                           </selectedColor>
-                           <unSelectedColor>
-                              <Color red="1.0" />
-                           </unSelectedColor>
-                        </JFXRadioButton>
-                        <JFXRadioButton fx:id="rb_four_bell_sunday" layoutX="816.0" layoutY="314.0" selected="true" text="زنگ چهارم">
-                           <selectedColor>
-                              <Color green="0.1921568661928177" blue="1.0" />
-                           </selectedColor>
-                           <unSelectedColor>
-                              <Color red="1.0" />
-                           </unSelectedColor>
-                        </JFXRadioButton>
-                        <JFXRadioButton fx:id="rb_one_bell_monday" layoutX="558.0" layoutY="236.0" selected="true" text="زنگ اول">
-                           <selectedColor>
-                              <Color green="0.1921568661928177" blue="1.0" />
-                           </selectedColor>
-                           <unSelectedColor>
-                              <Color red="1.0" />
-                           </unSelectedColor>
-                        </JFXRadioButton>
-                        <JFXRadioButton fx:id="rb_tow_bell_monday" layoutX="558.0" layoutY="262.0" selected="true" text="زنگ دوم">
-                           <selectedColor>
-                              <Color green="0.1921568661928177" blue="1.0" />
-                           </selectedColor>
-                           <unSelectedColor>
-                              <Color red="1.0" />
-                           </unSelectedColor>
-                        </JFXRadioButton>
-                        <JFXRadioButton fx:id="rb_three_bell_monday" layoutX="558.0" layoutY="288.0" selected="true" text="زنگ سوم">
-                           <selectedColor>
-                              <Color green="0.1921568661928177" blue="1.0" />
-                           </selectedColor>
-                           <unSelectedColor>
-                              <Color red="1.0" />
-                           </unSelectedColor>
-                        </JFXRadioButton>
-                        <JFXRadioButton fx:id="rb_four_bell_monday" layoutX="558.0" layoutY="314.0" selected="true" text="زنگ چهارم">
-                           <selectedColor>
-                              <Color green="0.1921568661928177" blue="1.0" />
-                           </selectedColor>
-                           <unSelectedColor>
-                              <Color red="1.0" />
-                           </unSelectedColor>
-                        </JFXRadioButton>
-                        <JFXRadioButton fx:id="rb_one_bell_tuesday" layoutX="293.0" layoutY="236.0" selected="true" text="زنگ اول">
-                           <selectedColor>
-                              <Color green="0.1921568661928177" blue="1.0" />
-                           </selectedColor>
-                           <unSelectedColor>
-                              <Color red="1.0" />
-                           </unSelectedColor>
-                        </JFXRadioButton>
-                        <JFXRadioButton fx:id="rb_tow_bell_tuesday" layoutX="293.0" layoutY="262.0" selected="true" text="زنگ دوم">
-                           <selectedColor>
-                              <Color green="0.1921568661928177" blue="1.0" />
-                           </selectedColor>
-                           <unSelectedColor>
-                              <Color red="1.0" />
-                           </unSelectedColor>
-                        </JFXRadioButton>
-                        <JFXRadioButton fx:id="rb_three_bell_tuesday" layoutX="293.0" layoutY="288.0" selected="true" text="زنگ سوم">
-                           <selectedColor>
-                              <Color green="0.1921568661928177" blue="1.0" />
-                           </selectedColor>
-                           <unSelectedColor>
-                              <Color red="1.0" />
-                           </unSelectedColor>
-                        </JFXRadioButton>
-                        <JFXRadioButton fx:id="rb_four_bell_tuesday" layoutX="293.0" layoutY="314.0" selected="true" text="زنگ چهارم">
-                           <selectedColor>
-                              <Color green="0.1921568661928177" blue="1.0" />
-                           </selectedColor>
-                           <unSelectedColor>
-                              <Color red="1.0" />
-                           </unSelectedColor>
-                        </JFXRadioButton>
-                        <JFXRadioButton fx:id="rb_one_bell_wednesday" layoutX="21.0" layoutY="236.0" selected="true" text="زنگ اول">
-                           <selectedColor>
-                              <Color green="0.1921568661928177" blue="1.0" />
-                           </selectedColor>
-                           <unSelectedColor>
-                              <Color red="1.0" />
-                           </unSelectedColor>
-                        </JFXRadioButton>
-                        <JFXRadioButton fx:id="rb_tow_bell_wednesday" layoutX="21.0" layoutY="262.0" selected="true" text="زنگ دوم">
-                           <selectedColor>
-                              <Color green="0.1921568661928177" blue="1.0" />
-                           </selectedColor>
-                           <unSelectedColor>
-                              <Color red="0.9736841917037964" />
-                           </unSelectedColor>
-                        </JFXRadioButton>
-                        <JFXRadioButton fx:id="rb_three_bell_wednesday" layoutX="21.0" layoutY="288.0" selected="true" text="زنگ سوم">
-                           <selectedColor>
-                              <Color green="0.1921568661928177" blue="1.0" />
-                           </selectedColor>
-                           <unSelectedColor>
-                              <Color red="1.0" />
-                           </unSelectedColor>
-                        </JFXRadioButton>
-                        <JFXRadioButton fx:id="rb_four_bell_wednesday" layoutX="21.0" layoutY="314.0" selected="true" text="زنگ چهارم">
-                           <selectedColor>
-                              <Color green="0.1921568661928177" blue="1.0" />
-                           </selectedColor>
-                           <unSelectedColor>
-                              <Color red="1.0" />
-                           </unSelectedColor>
-                        </JFXRadioButton>
                         <Button fx:id="bt_next_teachers" layoutX="795.0" layoutY="515.0" mnemonicParsing="false" onAction="#pressNextTeachers" prefHeight="34.0" prefWidth="88.0" style="-fx-background-color: #0dd32b;" text="بعدی" />
-                        <Button fx:id="bt_finish_teachers" layoutX="795.0" layoutY="582.0" mnemonicParsing="false" onAction="#pressFinisTeachers" prefHeight="34.0" prefWidth="88.0" style="-fx-background-color: #0095ff;" text="تمام" />
+                        <Button fx:id="bt_finish_teachers" layoutX="795.0" layoutY="582.0" mnemonicParsing="false" onAction="#pressFinisTeacher" prefHeight="34.0" prefWidth="88.0" style="-fx-background-color: #0095ff;" text="تمام" />
                         <JFXListView fx:id="list_teachers" layoutX="886.0" layoutY="354.0" prefHeight="312.0" prefWidth="314.0" />
+                        <VBox layoutX="1057.0" layoutY="225.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="94.0" prefWidth="84.0" spacing="7.0">
+                           <children>
+                              <JFXCheckBox fx:id="chb_one_bell_saturday" checkedColor="#0cda73" selected="true" text="زنگ اول" unCheckedColor="RED" />
+                              <JFXCheckBox fx:id="chb_tow_bell_saturday" checkedColor="#0cda73" selected="true" text="زنگ دوم" unCheckedColor="RED" />
+                              <JFXCheckBox fx:id="chb_three_bell_saturday" checkedColor="#0cda73" selected="true" text="زنگ سوم" unCheckedColor="RED" />
+                              <JFXCheckBox fx:id="chb_four_bell_saturday" checkedColor="#0cda73" selected="true" text="زنگ چهارم" unCheckedColor="RED" />
+                           </children>
+                        </VBox>
+                        <JFXCheckBox fx:id="chb_saturday" checkedColor="#0044ff" layoutX="1134.0" layoutY="200.0" onAction="#select_chb_saturday" selected="true" text="شنبه" unCheckedColor="RED">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </JFXCheckBox>
+                        <JFXCheckBox fx:id="chb_sunday" checkedColor="#0044ff" layoutX="874.0" layoutY="204.0" onAction="#select_chb_sunday" selected="true" text=" یک شنبه" unCheckedColor="RED">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </JFXCheckBox>
+                        <JFXCheckBox fx:id="chb_monday" checkedColor="#0044ff" layoutX="622.0" layoutY="204.0" onAction="#select_chb_monday" selected="true" text="دوشنبه" unCheckedColor="RED">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </JFXCheckBox>
+                        <JFXCheckBox fx:id="chb_tuesday" checkedColor="#0044ff" layoutX="359.0" layoutY="204.0" onAction="#select_chb_tuesday" selected="true" text="سه شنبه" unCheckedColor="RED">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </JFXCheckBox>
+                        <JFXCheckBox fx:id="chb_wednesday" checkedColor="#0044ff" layoutX="109.0" layoutY="204.0" onAction="#select_chb_wednesday" selected="true" text="چهار شنبه" unCheckedColor="RED">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </JFXCheckBox>
+                        <VBox layoutX="21.0" layoutY="229.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="94.0" prefWidth="84.0" spacing="7.0">
+                           <children>
+                              <JFXCheckBox fx:id="chb_one_bell_wednesday" checkedColor="#0cda73" selected="true" text="زنگ اول" unCheckedColor="RED" />
+                              <JFXCheckBox fx:id="chb_tow_bell_wednesday" checkedColor="#0cda73" selected="true" text="زنگ دوم" unCheckedColor="RED" />
+                              <JFXCheckBox fx:id="chb_three_bell_wednesday" checkedColor="#0cda73" selected="true" text="زنگ سوم" unCheckedColor="RED" />
+                              <JFXCheckBox fx:id="chb_four_bell_wednesday" checkedColor="#0cda73" selected="true" text="زنگ چهارم" unCheckedColor="RED" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="275.0" layoutY="229.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="94.0" prefWidth="84.0" spacing="7.0">
+                           <children>
+                              <JFXCheckBox fx:id="chb_one_bell_tuesday" checkedColor="#0cda73" selected="true" text="زنگ اول" unCheckedColor="RED" />
+                              <JFXCheckBox fx:id="chb_tow_bell_tuesday" checkedColor="#0cda73" prefHeight="217.0" prefWidth="67.0" selected="true" text="زنگ دوم" unCheckedColor="RED" />
+                              <JFXCheckBox fx:id="chb_three_bell_tuesday" checkedColor="#0cda73" selected="true" text="زنگ سوم" unCheckedColor="RED" />
+                              <JFXCheckBox fx:id="chb_four_bell_tuesday" checkedColor="#0cda73" selected="true" text="زنگ چهارم" unCheckedColor="RED" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="538.0" layoutY="229.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="94.0" prefWidth="84.0" spacing="7.0">
+                           <children>
+                              <JFXCheckBox fx:id="chb_one_bell_monday" checkedColor="#0cda73" selected="true" text="زنگ اول" unCheckedColor="RED" />
+                              <JFXCheckBox fx:id="chb_tow_bell_monday" checkedColor="#0cda73" selected="true" text="زنگ دوم" unCheckedColor="RED" />
+                              <JFXCheckBox fx:id="chb_three_bell_monday" checkedColor="#0cda73" selected="true" text="زنگ سوم" unCheckedColor="RED" />
+                              <JFXCheckBox fx:id="chb_four_bell_monday" checkedColor="#0cda73" selected="true" text="زنگ چهارم" unCheckedColor="RED" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="797.0" layoutY="229.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="94.0" prefWidth="84.0" spacing="7.0">
+                           <children>
+                              <JFXCheckBox fx:id="chb_one_bell_sunday" checkedColor="#0cda73" selected="true" text="زنگ اول" unCheckedColor="RED" />
+                              <JFXCheckBox fx:id="chb_tow_bell_sunday" checkedColor="#0cda73" selected="true" text="زنگ دوم" unCheckedColor="RED" />
+                              <JFXCheckBox fx:id="chb_three_bell_sunday" checkedColor="#0cda73" selected="true" text="زنگ سوم" unCheckedColor="RED" />
+                              <JFXCheckBox fx:id="chb_four_bell_sunday" checkedColor="#0cda73" selected="true" text="زنگ چهارم" unCheckedColor="RED" />
+                           </children>
+                        </VBox>
                      </children>
                   </AnchorPane>
               </content>
@@ -278,7 +126,7 @@
             <content>
               <AnchorPane fx:id="apane_tab_classes" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Label fx:id="lb_guide" layoutX="102.0" layoutY="1.0" text="در این بخش شما میبایستد نام کلاس های دبیرستان خود را وارد کنید و انتخاب کنید که در هفته چند ساعت باید با هر معلم کلاس داشته باشند">
+                        <Label fx:id="lb_guide_lesson" layoutX="102.0" layoutY="1.0" text="در این بخش شما میبایستد نام کلاس های دبیرستان خود را وارد کنید و انتخاب کنید که در هفته چند ساعت باید با هر معلم کلاس داشته باشند">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
@@ -288,7 +136,7 @@
                               <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="1004.0" layoutY="48.0" promptText="نام کلاس را وارد کیند" />
+                        <TextField fx:id="txf_name_class" layoutX="1004.0" layoutY="48.0" promptText="نام کلاس را وارد کیند" />
                         <ComboBox fx:id="cbox_selection_lesson" layoutX="1000.0" layoutY="154.0" prefWidth="150.0" promptText="لیست دروس" />
                         <Label fx:id="lb_guide_niaz_lesson" layoutY="105.0" text="در این بخش یکی یکی دروس را انتخاب کرده و تعین کنید که در هفته این کلاس باید چند ساعت این درس را داشته باشند سپس بروی دکمه تایید کلیک کنید و درس بعدی رامشخص کنید و بعد از پایان دروس بر روی دکمه تمام بزنید">
                            <font>
